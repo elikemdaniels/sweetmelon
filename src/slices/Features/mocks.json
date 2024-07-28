@@ -24,8 +24,8 @@
 								"icon",
 								{
 									"__TYPE__": "FieldContent",
-									"value": "bargraph",
-									"type": "Select"
+									"type": "Select",
+									"value": "calendar"
 								}
 							],
 							[
@@ -52,6 +52,51 @@
 											"content": {
 												"text": "Veniam excepteur minim culpa et ad."
 											}
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "bargraph"
+								}
+							],
+							[
+								"heading",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Another item",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Just a simple description",
+												"spans": []
+											},
+											"direction": "ltr"
 										}
 									]
 								}
