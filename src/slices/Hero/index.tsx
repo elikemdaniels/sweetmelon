@@ -35,7 +35,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
               components={components}
             />
 
-            <Button field={slice.primary.button_link} className="uppercase">
+            <Button field={slice.primary.button_link} className="uppercase mt-8">
               {slice.primary.button_label}
             </Button>
           </div>
