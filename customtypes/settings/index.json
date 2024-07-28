@@ -28,6 +28,14 @@
           "thumbnails": []
         }
       },
+      "site_logo": {
+        "type": "Image",
+        "config": {
+          "label": "Site Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "navigation": {
         "type": "Group",
         "config": {

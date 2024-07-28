@@ -215,6 +215,17 @@ interface SettingsDocumentData {
   og_image: prismic.ImageField<never>;
 
   /**
+   * Site Logo field in *Settings*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.site_logo
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  site_logo: prismic.ImageField<never>;
+
+  /**
    * Navigation field in *Settings*
    *
    * - **Field Type**: Group

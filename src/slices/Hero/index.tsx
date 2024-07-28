@@ -19,28 +19,53 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  */
 const Hero = ({ slice }: HeroProps): JSX.Element => {
   return (
-    <Bounded
-      data-slice-type={slice.slice_type}
-      data-slice-variation={slice.variation}
-      className="py-24 bg-sky-50"
-    >
-      <div className="max-w-4xl mx-auto flex flex-col gap-5 items-center">
-        <PrismicRichText field={slice.primary.heading}
-          components={components}
-        />
+    <>
+      {slice.variation === "default" && (
+        <Bounded
+          data-slice-type={slice.slice_type}
+          data-slice-variation={slice.variation}
+          className="py-24 bg-sky-50"
+        >
+          <div className="max-w-4xl mx-auto flex flex-col gap-5 items-center text-center">
+            <PrismicRichText field={slice.primary.heading}
+              components={components}
+            />
 
-        <PrismicRichText field={slice.primary.subheading}
-          components={components}
-        />
+            <PrismicRichText field={slice.primary.subheading}
+              components={components}
+            />
 
-        <Button field={slice.primary.button_link} className="uppercase">
-          {slice.primary.button_label}
-        </Button>
+            <Button field={slice.primary.button_link} className="uppercase">
+              {slice.primary.button_label}
+            </Button>
+          </div>
+          <PrismicNextImage field={slice.primary.image} className="rounded-3xl shadow-md mt-16" />
+        </Bounded>
+      )}
 
-      </div>
-      <PrismicNextImage field={slice.primary.image} className="rounded-3xl shadow-md mt-16" />
+      {slice.variation === "horizontal" && (
+        <Bounded
+          data-slice-type={slice.slice_type}
+          data-slice-variation={slice.variation}
+          className="py-24 bg-sky-50"
+        >
+          <div className="max-w-4xl mx-auto flex flex-col gap-5 items-center">
+            <PrismicRichText field={slice.primary.heading}
+              components={components}
+            />
 
-    </Bounded>
+            <PrismicRichText field={slice.primary.subheading}
+              components={components}
+            />
+
+            <Button field={slice.primary.button_link} className="uppercase">
+              {slice.primary.button_label}
+            </Button>
+          </div>
+          <PrismicNextImage field={slice.primary.image} className="rounded-3xl shadow-md mt-16" />
+        </Bounded>
+      )}
+    </>
   );
 };
 

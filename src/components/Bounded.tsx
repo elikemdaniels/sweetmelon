@@ -12,7 +12,7 @@ export default function Bounded({
 }: BoundedProps) {
   return (
     <Component className={`px-[5%] ${className}`} {...restProps}>
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto">
         {children}
       </div>
     </Component>
