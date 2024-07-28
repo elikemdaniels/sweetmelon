@@ -15,7 +15,7 @@ export default async function Header() {
       <div className="flex md:flex-row md:justify-between items-center">
         <Link href="/" className="font-bold text-lg inline-block py-2">
           {/* Check if the site logo URL is present */}
-          {settings.data.site_logo ? (<PrismicNextImage field={settings.data.site_logo} className="inline-block w-auto h-8" />) : (settings.data.site_title)}
+          {settings.data.site_logo ? (<PrismicNextImage field={settings.data.site_logo} className="inline-block w-auto h-6" />) : (settings.data.site_title)}
         </Link>
         <menu>
           <ul className="flex gap-10">
