@@ -49,7 +49,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           data-slice-variation={slice.variation}
           className="py-24 bg-sky-50"
         >
-          <div className="max-w-4xl mx-auto flex flex-col gap-5 items-center">
+          <div className="mx-auto flex gap-5 items-start">
             <PrismicRichText field={slice.primary.heading}
               components={components}
             />
