@@ -1,0 +1,70 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Development toolkits for the modern web",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Read more"
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io"
+				}
+			},
+			"image": {
+				"url": "https://images.unsplash.com/photo-1658217456399-8e5cf10c128a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxtaW5pbWFsJTIwYmxhY2t8ZW58MHx8fHwxNzIyMTAyODkzfDA&ixlib=rb-4.0.3&q=85",
+				"alt": "a group of white spheres",
+				"origin": {
+					"id": "P-CQ-zfKloI",
+					"url": "https://images.unsplash.com/photo-1658217456399-8e5cf10c128a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxtaW5pbWFsJTIwYmxhY2t8ZW58MHx8fHwxNzIyMTAyODkzfDA&ixlib=rb-4.0.3&q=85",
+					"width": 6000,
+					"height": 4000
+				},
+				"width": 6000,
+				"height": 4000,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"subheading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Getting started with NextJS and Sveltekit is an amazing developer experience of a life time.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
