@@ -12,6 +12,7 @@ const inter = Inter({
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
   const settings = await client.getSingle("settings");
+
   return {
     title: settings.data.site_title,
     description: settings.data.site_description,
@@ -30,7 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <main>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

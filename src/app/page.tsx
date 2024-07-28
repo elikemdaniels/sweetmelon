@@ -14,9 +14,15 @@ export default async function Page() {
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
   const page = await client.getSingle("homepage");
+  const settings = await client.getSingle("settings");
+  const siteTitle = settings.data.site_title;
+  const metaTitle = page.data.meta_title;
 
   return {
-    title: page.data.meta_title,
-    description: page.data.meta_description,
+    title: `${siteTitle} - ${metaTitle}`,
+    description: page.data.meta_description ?? settings.data.site_description,
+    openGraph: {
+      images: [page.data.meta_image.url ?? settings.data.og_image.url ?? ""]
+    }
   };
 }
